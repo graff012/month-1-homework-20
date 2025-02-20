@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #edeef6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button {
+  background-color: purple;
+  color: aliceblue;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-container {
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  border: 4px solid purple;
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.modal p {
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+.modal button {
+  margin-bottom: 0;
+  margin-top: 10px;
+}

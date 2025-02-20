@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: silver;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 23px;
+  width: 400px;
+  height: 100px;
+  margin-top: 100px;
+}
+
+.container button {
+  font-size: 40px;
+  background-color: coral;
+  border: none;
+  color: aliceblue;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.container span {
+  font-size: 40px;
+  font-weight: 800;
+}
